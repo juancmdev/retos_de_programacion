@@ -15,6 +15,17 @@ while i <= 10:
     print(i)
     i += 1
 
+print("\n\n")
+
+
+def count_ten(i: int):
+    if i <= 50:
+        print(i)
+        count_ten(i + 1)
+
+count_ten(1)
+
+
 '''
 * DIFICULTAD EXTRA (opcional):
  * Escribe el mayor número de mecanismos que posea tu lenguaje
