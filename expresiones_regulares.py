@@ -20,7 +20,7 @@ def validate_email(email: str) -> bool:
 print(validate_email("juancmorenoj@gmail.com"))
 
 def validate_phone(phone: str) -> bool:
-    return bool(re.match(r"^[\d]{3,}$", phone))
+    return bool(re.match(r"^\+?[\d\s]{3,}$", phone))
 
-print(validate_phone("1234"))
+print(validate_phone("+00320 1234"))
 
