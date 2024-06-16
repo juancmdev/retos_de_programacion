@@ -19,12 +19,14 @@ print("\n\n")
 
 
 #Función recursiva
-def count_ten(i: int):
+def count_ten(i = 1):
     if i <= 50:
         print(i)
         count_ten(i + 1)
 
 count_ten(1)
+
+print("\n\n")
 
 
 '''
@@ -33,3 +35,28 @@ count_ten(1)
  * para iterar valores. ¿Eres capaz de utilizar 5? ¿Y 10?
  */
 '''
+
+
+for e in [1, 2, 3, 4]:
+    print(e)
+
+print("\n")
+
+for e in {1, 2, 3, 4}:
+    print(e)
+
+print("\n")
+
+for e in {1: "a", 2: "b", 3: "c", 4: "d"}:
+    print(e)
+
+print("\n")
+
+#compresion list
+print(*[i for i in range(1, 11)], sep="\n")
+
+print("\n")
+
+
+for c in "Phyton":
+    print(c)
