@@ -18,6 +18,7 @@ while i <= 10:
 print("\n\n")
 
 
+#Función recursiva
 def count_ten(i: int):
     if i <= 50:
         print(i)
