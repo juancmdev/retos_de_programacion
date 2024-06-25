@@ -12,3 +12,7 @@ EJERCICIO:
  * tarea ejecutada (a tu elección).
  * Utiliza el log para visualizar el tiempo de ejecución de cada tarea.
 """
+
+import logging
+
+logging.debug("Esto es un mensaje de debug")
