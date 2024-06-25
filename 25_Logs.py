@@ -16,3 +16,5 @@ EJERCICIO:
 import logging
 
 logging.debug("Esto es un mensaje de debug")
+logging.info("Esto es un mensaje INFO")
+logging.warning("Esto es un mensaje de WARNING")
