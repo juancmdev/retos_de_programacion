@@ -15,6 +15,14 @@ EJERCICIO:
 
 import logging
 
-logging.debug("Esto es un mensaje de debug")
-logging.info("Esto es un mensaje INFO")
+logging.basicConfig(level=logging.DEBUG, format="%(asctime)s - %(levelname)s - %(message)s - handlers=[logging.StreemHandler()]")
+
+# Niveles de severidad
+logging.debug("Esto es un mensaje de DEBUG")
+logging.info("Esto es un mensaje INFO") 
 logging.warning("Esto es un mensaje de WARNING")
+logging.error("Esto es un mensaje de ERROR")
+logging.critical("Este es un mensaje CRITICAL")
+
+# Solo imprime por consola los mensajes de ERROR, WARNING y CRITICAL
+# Es decir, aquellos que suponen un problema
