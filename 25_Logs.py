@@ -41,6 +41,7 @@ class TaskManager:
             logging.info(f"Tarea añadida: {name}")
         else:
             logging.warning(f"Se ha intentado añadir una tarea que ya existe: {name}")
+        logging.debug(f"Número de tareas: {len(self.tasks)}")
 
 
     def delete_task(self, name: str):
@@ -58,9 +59,11 @@ class TaskManager:
         else:
             logging.info(f"No hay tareas para mostrar")
 
-            
+
 task_manager = TaskManager()
 task_manager.add_task("Pan", "Comprar 5 barras de pan")
+task_manager.add_task("Javascript", "Estudiar JS")
+task_manager.add_task("Saludar", "Hola, cómo están?")
+task_manager.add_task("Comer", "Ir a comer")
 task_manager.add_task("Python", "Estudiar Python")
 task_manager.list_tasks()
-task_manager.add_task("Pan", "Comprar 5 barras de pan")
